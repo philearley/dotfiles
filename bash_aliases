@@ -30,3 +30,5 @@ alias gs='git status'
 alias gd='git diff '
 alias gc='git checkout '
 alias open='sensible-browser'
+
+git config --global alias.co checkout

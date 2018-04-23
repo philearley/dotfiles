@@ -5,9 +5,6 @@ export MYSQL_USERNAME=root
 export MYSQL_PASSWORD=admin
 export MYSQL_ROOT_PASSWORD=admin
 
-# Install git-bash-completion
-sudo apt-get install git bash-completion
-
 # Output chmod reference diagram and usage
 function chmod_ref {
   echo "
