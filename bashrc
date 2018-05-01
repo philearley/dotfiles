@@ -3,10 +3,10 @@
 # for examples
 
 # Set title to "Peppermint Terminal"
-PROMPT_COMMAND='echo -ne "\033]0;Peppermint Terminal\007"'
+#PROMPT_COMMAND='echo -ne "\033]0;Peppermint Terminal\007"'
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source "$DIR/bash_aliases"
 source "$DIR/bash_profile"
-source "$DIR/bash_prompt"
+#source "$DIR/bash_prompt"
