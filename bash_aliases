@@ -19,6 +19,16 @@ function dbash {
   docker exec -it $1 bash
 }
 
+function devown {
+  sudo chown developer $1; sudo chgrp developer $1
+}
+
+function buildbranch {
+  local branch_name=$(git rev-parse --abbrev-ref HEAD)
+  local last_commit=$(git rev-parse --short HEAD)
+  git checkout -b "build-$branch_name-$last_commit"
+}
+
 # Naivation aliases
 alias dev='cd /home/developer/development'
 alias ..='cd ..'
@@ -29,6 +39,8 @@ alias g='git'
 alias gs='git status'
 alias gd='git diff '
 alias gc='git checkout '
+alias lastcommit='git rev-parse --short HEAD'
+
 alias open='sensible-browser'
 
 git config --global alias.co checkout
