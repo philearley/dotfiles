@@ -1,8 +1,5 @@
 echo "Custom bash aliases loaded."
 
-# AWS aliases
-alias aws_login='`aws ecr get-login --region eu-west-1`'
-
 # Docker aliases
 alias docker_rmi='docker rmi -f $(docker images -q -a)'
 alias docker_rmc='docker rm -f $(docker ps -a -q)'
@@ -29,7 +26,7 @@ function buildbranch {
   git checkout -b "build-$branch_name-$last_commit"
 }
 
-# Naivation aliases
+# Navigation aliases
 alias dev='cd /home/developer/development'
 alias ..='cd ..'
 alias ...='cd ../../'
