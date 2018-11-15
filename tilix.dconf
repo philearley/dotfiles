@@ -34,7 +34,7 @@ dim-transparency-percent=0
 [keybindings]
 win-switch-to-session-3='<Primary>3'
 terminal-find='<Primary>f'
-terminal-paste='<Primary><Shift>v'
+terminal-paste='<Primary>v'
 session-switch-to-terminal-down='<Alt>Down'
 session-add-right='<Primary>Right'
 session-add-down='<Primary>Down'

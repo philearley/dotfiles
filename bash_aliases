@@ -41,3 +41,6 @@ alias lastcommit='git rev-parse --short HEAD'
 alias open='sensible-browser'
 
 git config --global alias.co checkout
+
+alias backupTilix='dconf dump /com/gexperts/Tilix/ > tilix.dconf'
+alias loadTilix='dconf load /com/gexperts/Tilix/ < tilix.dconf'
