@@ -44,3 +44,5 @@ git config --global alias.co checkout
 
 alias backupTilix='dconf dump /com/gexperts/Tilix/ > tilix.dconf'
 alias loadTilix='dconf load /com/gexperts/Tilix/ < tilix.dconf'
+alias disablerepeast='xset r off'
+alias enablerepeat='xset r on'
