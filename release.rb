@@ -22,4 +22,4 @@ EOF
 hub add .
 hub commit -m "$RELEASE_TITLE"
 hub push origin release-$VERSION
-hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -F "./release-file.txt" -A "philearley"
+hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -F "./release-file.txt" --assign "philearley"
