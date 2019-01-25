@@ -15,4 +15,4 @@ RELEASE_TITLE="Run release steps for $VERSION"
 
 hub add .
 hub commit -m "$RELEASE_TITLE"
-hub pull-request -b "philearley:release-$VERSION" -h "philearley:dotfiles" -m "$RELEASE_TITLE" -m "$release_notes"
+hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" -m "$release_notes"
