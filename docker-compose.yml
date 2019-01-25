@@ -1,7 +1,8 @@
-version: "2"
+version: '2.4'
 
 services:
   app:
-    image: golang:1.6.1-alpine
-    volumes:
-      - ./release.sh
+    build:
+      context: .
+      dockerfile: Dockerfile.go
+    command: sleep 30d
