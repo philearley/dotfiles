@@ -1,6 +1,6 @@
 #!/bin/bash
-
-VERSION=v2_58_0
+set -ex
+VERSION=v2_5810
 
 release_notes=$(cat "v2_58_0.html.md")
 
