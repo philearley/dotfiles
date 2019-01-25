@@ -18,5 +18,4 @@ EOF
 hub add .
 hub commit -m "$RELEASE_TITLE"
 hub push origin release-$VERSION
-# hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -F "./release-file.txt" --assign "philearley"
 hub pull-request -a "philearley" -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" -m "" -m "$release_notes" -l "Targaryen,Pending Review"
