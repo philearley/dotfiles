@@ -13,7 +13,13 @@ git checkout -b release-$VERSION
 
 RELEASE_TITLE="Run release steps for $VERSION"
 
+cat > "./release-file.txt" <<EOF
+  $RELEASE_TITLE
+
+  $release_notes
+EOF
+
 hub add .
 hub commit -m "$RELEASE_TITLE"
 hub push origin release-$VERSION
-hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" --edit
+hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" --file=./relesae-file.txt
