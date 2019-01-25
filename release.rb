@@ -23,4 +23,4 @@ EOF
 /home/developer/go/src/github.com/github/hub/bin/hub commit -m "$RELEASE_TITLE"
 /home/developer/go/src/github.com/github/hub/bin/hub push origin release-$VERSION
 # hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -F "./release-file.txt" --assign "philearley"
-/home/developer/go/src/github.com/github/hub/bin/hub pull-request --assign "philearley" -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" -m "" -m "$release_notes"
+/home/developer/go/src/github.com/github/hub/bin/hub pull-request -a "philearley" -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" -m "" -m "$release_notes" -l "Targaryen,Pending Review"
