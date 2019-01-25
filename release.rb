@@ -1,0 +1,18 @@
+#!/bin/bash
+
+VERSION=v2_58_0
+
+# while read p; do
+#   echo "$p"
+# done < ./release_notes/$VERSION.html.md
+
+release_notes=$(cat "./../s1_gac_ui/release_notes/$VERSION.html.md")
+echo "$release_notes"
+
+git checkout -b release-$VERSION
+
+RELEASE_TITLE="Run release steps for $VERSION"
+
+hub add .
+hub commit -m "$RELEASE_TITLE"
+hub pull-request -h "release-$VERSION" -m "$RELEASE_TITLE" -m "$release_notes"
