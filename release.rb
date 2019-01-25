@@ -15,5 +15,5 @@ RELEASE_TITLE="Run release steps for $VERSION"
 
 hub add .
 hub commit -m "$RELEASE_TITLE"
-hub push release-$VERSION
+hub push origin release-$VERSION
 hub pull-request -b "philearley:master" -h "philearley:release-$VERSION" -m "$RELEASE_TITLE" -m "$release_notes"
