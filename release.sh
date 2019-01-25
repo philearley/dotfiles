@@ -1,13 +1,12 @@
 #!/bin/bash
 
-VERSION=v2_58_0
+VERSION=$1
 
 # while read p; do
 #   echo "$p"
 # done < ./release_notes/$VERSION.html.md
 
 release_notes=$(cat "./../s1_gac_ui/release_notes/$VERSION.html.md")
-echo "$release_notes"
 
 git checkout -b release-$VERSION
 
@@ -18,6 +17,8 @@ cat > "./release-file.txt" <<EOF
 
   $release_notes
 EOF
+
+
 
 /home/developer/go/src/github.com/github/hub/bin/hub add .
 /home/developer/go/src/github.com/github/hub/bin/hub commit -m "$RELEASE_TITLE"
