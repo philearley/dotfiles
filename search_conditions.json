@@ -1,0 +1,87 @@
+Paginated search params
+
+{
+  "business_guid": "708885ddbb5147149c9ac4b7efdeffb7",
+  "ledger_account_guids": [
+    "e94d85c297674c5f88ea96df023ec70a",
+    "287a290cd81549faa8847286a7902c8e"
+  ],
+  "created_by": {
+    "guid": "49fe3d549dc646bda3c98f89316daa87",
+    "name": "Lauren Thompson"
+  },
+  "analysis_types": {
+    "64759aae22b348539cb4aa8727bcfce4": { // Where the key is the category guid
+      "guid": "d43ea4950b3347089b0d968c866464d8",
+      "name": "The Cake Fair"
+    },
+    "4c4dda4007cc4e43910d8df31aa77ffd": { // Where the key is the category guid
+      "guid": "22a605c56b8b45f0b4091cb7ef6b1b46",
+      "name": "Department 1"
+    },
+    "dcb7e00d74cb4788b29fe981bd65c2ae": { // Where the key is the category guid
+      "guid": "bc47375e749b4532bf64efc85bcd183e",
+      "name": "Items"
+    }
+  },
+  "contact": {
+    "guid": "3558f0fbf8264846a7c11df519df9199",
+    "name": "Joe bloggs"
+  },
+  "transaction_date_from": "2018-12-01T10:59:08.000+00:00",
+  "transaction_date_to": "2018-12-10T10:59:08.000+00:00",
+  "amount_from": "88.73",
+  "amount_to": "88.73",
+  "transaction_type_identifier": "SALES_INVOICE",
+  "page_number": "", // The page you are viewing
+  "page_items": "", // How many per page
+  "sort_column": "", // One of the defined sortable columns
+  "sort_order": "", // ASC or DESC
+  "all": false // Paginated response.
+}
+
+Unpaginated search params
+
+{
+  "business_guid": "708885ddbb5147149c9ac4b7efdeffb7",
+  "ledger_account_guids": [
+    "e94d85c297674c5f88ea96df023ec70a",
+    "287a290cd81549faa8847286a7902c8e"
+  ],
+  "analysis_types": {
+    "f314fcbd4c1140d5b57e8b5edb6f315a": "1ef3138fa7ca47afa985a2390867346f", // Where first ID is category and second is analysis type.
+    "77e484df669c4334ab3e3495d7ddcd4d": "d42a25bb598b4aa39dbdc672cdcc6f58", // Where first ID is category and second is analysis type.
+    "7d2d8fc9da8445cabe0d9eecdbaf473d": "73b63e0b4b2342d597f95a3248b47585", // Where first ID is category and second is analysis type.
+  },
+  "amount_from": "88.73",
+  "amount_to": "88.73",
+  "transaction_type_identifier": "SALES_INVOICE",
+  "created_by_guid": "49fe3d549dc646bda3c98f89316daa87",
+  "contact_guid": "3558f0fbf8264846a7c11df519df9199",
+  "transaction_date_from": "2018-12-01T10:59:08.000+00:00",
+  "transaction_date_to": "2018-12-10T10:59:08.000+00:00",
+  "contact_guid": "dfaeea2f7146466ca0c5a86b5bf7cbeb",
+  "sort_column": "", // One of the defined sortable columns
+  "sort_order": "", // ASC or DESC
+  "all": true // This is to not paginate the grid.
+}
+
+
+Update step search params
+
+{
+  "all": false, // Paginated response.
+  "business_guid": "708885ddbb5147149c9ac4b7efdeffb7",
+  "page_number": "", // The page you are viewing
+  "page_items": "", // How many per page
+  "sort_column": "", // One of the defined sortable columns
+  "sort_order": "", // ASC or DESC
+  "ledger_entry_guids": [
+    "2d68322e1e944fa7b752457758bdeeee",
+    "15c00975b8ae4ce18ce41f9ae1145717",
+    "2fb3794d385641d590d26ccf9e1a3ca0",
+    "fa0957d6226140f0a942df5cc823a2c6",
+    "7830f9fada204988bccc31d868aa1c4f",
+    "95ed1bd304a840fd82119fcd55af4ad3"
+  ]
+}
