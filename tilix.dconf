@@ -1,4 +1,63 @@
-[/]
+[org/x/editor/plugins/filebrowser/on-load]
+virtual-root='file:///home/developer/Development/api_tester'
+tree-view=true
+root='file:///'
+
+[org/x/editor]
+statusbar-visible=true
+
+[org/gnome/file-roller/listing]
+sort-method='name'
+name-column-width=250
+sort-type='ascending'
+list-mode='as-folder'
+show-path=false
+
+[org/gnome/file-roller/dialogs/extract]
+skip-newer=false
+recreate-folders=true
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[org/gnome/nm-applet]
+disable-disconnected-notifications=true
+disable-connected-notifications=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/peppermint/wallpapers/Squirrel_(image_by_Ray_Bilcliff).jpg'
+primary-color='#000000000000'
+picture-options='zoom'
+secondary-color='#000000000000'
+
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=177
+window-position=(676, 271)
+show-size-column=true
+show-hidden=true
+window-size=(1203, 847)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
+
+[org/nemo/window-state]
+start-with-sidebar=true
+geometry='800x550+878+418'
+maximized=false
+sidebar-bookmark-breakpoint=6
+
+[org/nemo/list-view]
+search-visible-columns=['name', 'size', 'type', 'where']
+
+[com/linuxmint/install]
+installed-apps=@as []
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+
+[com/gexperts/Tilix]
 new-window-inherit-state=false
 prompt-on-close=true
 quake-specific-monitor=0
@@ -8,10 +67,10 @@ theme-variant='system'
 quake-show-on-all-workspaces=true
 prompt-on-delete-profile=true
 
-[profiles]
+[com/gexperts/Tilix/profiles]
 list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
 
-[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 foreground-color='#A7A7A7'
 rewrap-on-resize=false
 visible-name='Default'
@@ -31,7 +90,7 @@ background-color='#1E1E1E'
 background-transparency-percent=0
 dim-transparency-percent=0
 
-[keybindings]
+[com/gexperts/Tilix/keybindings]
 win-switch-to-session-3='<Primary>3'
 terminal-find='<Primary>f'
 terminal-paste='<Primary>v'
