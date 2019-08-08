@@ -4,6 +4,7 @@ export EDITOR='vim'
 export MYSQL_USERNAME=root
 export MYSQL_PASSWORD=admin
 export MYSQL_ROOT_PASSWORD=admin
+export POSTMARK_TOKEN=dev 
 
 # Output chmod reference diagram and usage
 function chmod_ref {

@@ -47,3 +47,4 @@ alias loadTilix='dconf load /com/gexperts/Tilix/ < tilix.dconf'
 alias disablerepeast='xset r off'
 alias enablerepeat='xset r on'
 alias resetclip="pkill 'VBoxClient --clipboard' -f & sleep 1 && VBoxClient --clipboard"
+alias renet="sudo dhclient -v enp0s8"
